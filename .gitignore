@@ -1,0 +1,38 @@
+```gitignore
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# System
+.DS_Store
+Thumbs.db
+
+# Photos and outputs (do NOT upload personal photos)
+input_photos/
+output_ddcolor/
+output_faces_restored/
+output_final/
+temp/
+cache/
+
+# model downloads
+**/hub/
+**/weights/
+*.ckpt
+*.pth
+*.pt
+
+# Logs
+logs/
+wandb/
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
