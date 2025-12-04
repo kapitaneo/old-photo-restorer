@@ -130,7 +130,7 @@ GFPGANv1.4.pth
 Place your black-and-white photos into:
 
 ```
-input/
+input_bw/
 ```
 
 Then run:
