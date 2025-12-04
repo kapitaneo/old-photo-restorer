@@ -63,7 +63,7 @@ Replace the links with your actual images stored in `/docs/`.
 ```
 old-photo-restorer/
 │
-├── input/                     # Your original photos
+├── input_bw/                 # Your original photos
 ├── output_ddcolor/           # Results from DDColor
 ├── output_faces_restored/    # Results from GFPGAN
 ├── output_final/             # Final processed images
