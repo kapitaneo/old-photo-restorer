@@ -147,31 +147,6 @@ All outputs will appear in:
 
 ---
 
-## 🎨 Post-Processing (Optional)
-
-If you want to adjust color/tone/softness:
-
-```bash
-python postprocess.py --input output_faces_restored --output output_final
-```
-
-Settings can be changed inside `postprocess.py`.
-
----
-
-## ✨ Example Results (More Samples)
-
-Replace with your own:
-
-### Example 1
-**Before**  
-![b1](docs/before1.jpg)
-
-**After**  
-![a1](docs/after1.jpg)
-
----
-
 ## 🛠️ Technologies Used
 
 | Module | Purpose |
