@@ -8,6 +8,7 @@ from huggingface_hub import PyTorchModelHubMixin
 from ddcolor_model import DDColor
 from infer import ImageColorizationPipeline
 
+VALID_EXTS = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")
 
 class DDColorHF(DDColor, PyTorchModelHubMixin):
     def __init__(self, config):
@@ -61,7 +62,12 @@ def main():
     )
 
     for name in tqdm(img_list):
-        img = cv2.imread(os.path.join(args.input, name))
+        img_path = os.path.join(args.input, name)
+        img = cv2.imread(img_path)
+        if img is None:
+            print(f"Skip non-image or unreadable file: {img_path}")
+            continue
+
         image_out = colorizer.process(img)
         cv2.imwrite(os.path.join(args.output, name), image_out)
 
