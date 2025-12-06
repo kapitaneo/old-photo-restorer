@@ -20,7 +20,7 @@ DDCOLOR_DIR = ROOT / "third_party" / "DDColor"
 GFPGAN_DIR = ROOT / "third_party" / "GFPGAN"
 
 # DDColor model name
-MODEL_NAME = "ddcolor_paper_tiny"  # or "ddcolor_paper"
+MODEL_NAME = "ddcolor_paper"  # or "ddcolor_paper"
 
 
 def run_ddcolor():
